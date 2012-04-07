@@ -1,0 +1,16 @@
+{
+	"name": "script-loader",
+	"version": "0.1.1",
+	"author": "Tobias Koppers @sokra",
+	"description": "script loader module for webpack",
+	"dependencies": {
+		"raw-loader": "0.1.x"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"license": "MIT"
+}
