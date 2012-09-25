@@ -14,3 +14,4 @@ module.exports = function(content) {
 					JSON.stringify("raw" + rawJs) + "))";
 	return "";
 }
+module.exports.seperable = true;
