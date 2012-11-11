@@ -1,10 +1,11 @@
 {
 	"name": "script-loader",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"author": "Tobias Koppers @sokra",
 	"description": "script loader module for webpack",
 	"dependencies": {
-		"raw-loader": "0.1.x"
+		"raw-loader": "0.1.x",
+		"loader-utils": "0.1.x"
 	},
 	"licenses": [
 		{

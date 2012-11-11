@@ -3,15 +3,13 @@
 	Author Tobias Koppers @sokra
 */
 var path = require("path");
+var loaderUtils = require("loader-utils");
 module.exports = function(content) {
 	this.cacheable && this.cacheable();
 	this.clearDependencies && this.clearDependencies();
-	var loaderSign = this.request.indexOf("!");
-	var rawJs = this.request.substr(loaderSign); // including leading "!"
-	if(this.web)
-		return "require(" + JSON.stringify(path.join(__dirname, "addScript")) + ")"+
-				"(require(" +
-					JSON.stringify("raw" + rawJs) + "))";
-	return "";
+	var rawJs = loaderUtils.getRemainingRequest(this);
+	return "require(" + JSON.stringify(path.join(__dirname, "addScript" + (this.web ? ".web" : "") + ".js")) + ")"+
+			"(require(" +
+			JSON.stringify("raw" + rawJs) + "))";
 }
 module.exports.seperable = true;
