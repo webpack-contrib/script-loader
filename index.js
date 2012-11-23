@@ -10,6 +10,14 @@ module.exports = function(content) {
 	var rawJs = loaderUtils.getRemainingRequest(this);
 	return "require(" + JSON.stringify(path.join(__dirname, "addScript" + (this.web ? ".web" : "") + ".js")) + ")"+
 			"(require(" +
-			JSON.stringify("raw" + rawJs) + "))";
+			JSON.stringify("raw" + rawJs) + ")" +
+				(this.debug ?
+					"+" +
+						JSON.stringify(
+							"\n\n// SCRIPT-LOADER FOOTER\n//@ sourceURL=script:///" +
+								encodeURI(rawJs.replace(/^!/, "")).replace(/%5C|%2F/g, "/").replace(/\?/, "%3F").replace(/^\//, "")
+						) :
+					"") +
+			")";
 }
 module.exports.seperable = true;

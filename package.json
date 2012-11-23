@@ -1,6 +1,6 @@
 {
 	"name": "script-loader",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"author": "Tobias Koppers @sokra",
 	"description": "script loader module for webpack",
 	"dependencies": {
