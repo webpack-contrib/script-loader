@@ -4,7 +4,7 @@
 	"author": "Tobias Koppers @sokra",
 	"description": "script loader module for webpack",
 	"dependencies": {
-		"raw-loader": "0.1.x"
+		"raw-loader": "0.5.x"
 	},
 	"licenses": [
 		{
