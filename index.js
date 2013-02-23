@@ -8,7 +8,7 @@ module.exports.pitch = function(remainingRequest) {
 	this.cacheable && this.cacheable();
 	return "require(" + JSON.stringify("!" + path.join(__dirname, "addScript.js")) + ")"+
 			"(require(" +
-			JSON.stringify("!raw!" + remainingRequest) + ")" +
+			JSON.stringify("!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
 				(this.debug ?
 					"+" +
 						JSON.stringify(
