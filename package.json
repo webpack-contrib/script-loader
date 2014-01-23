@@ -6,6 +6,10 @@
 	"dependencies": {
 		"raw-loader": "0.5.x"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:webpack/script-loader.git"
+	},
 	"licenses": [
 		{
 			"type": "MIT",
