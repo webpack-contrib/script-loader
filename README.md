@@ -7,6 +7,8 @@ require("script!./file.js");
 // => execute file.js once in global context
 ```
 
+[Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
+
 Does nothing in node.js.
 
 ## License
