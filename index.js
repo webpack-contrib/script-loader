@@ -12,7 +12,7 @@ module.exports.pitch = function(remainingRequest) {
 				(this.debug ?
 					"+" +
 						JSON.stringify(
-							"\n\n// SCRIPT-LOADER FOOTER\n//@ sourceURL=script:///" +
+							"\n\n// SCRIPT-LOADER FOOTER\n//# sourceURL=script:///" +
 								encodeURI(remainingRequest.replace(/^!/, "")).replace(/%5C|%2F/g, "/").replace(/\?/, "%3F").replace(/^\//, "")
 						) :
 					"") +
