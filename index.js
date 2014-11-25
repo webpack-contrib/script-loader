@@ -6,9 +6,9 @@ var path = require("path");
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
 	this.cacheable && this.cacheable();
-	return "require(" + JSON.stringify("!" + path.join(__dirname, "addScript.js")) + ")"+
+	return "require(" + JSON.stringify("!!" + path.join(__dirname, "addScript.js")) + ")"+
 			"(require(" +
-			JSON.stringify("!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
+			JSON.stringify("!!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
 				(this.debug ?
 					"+" +
 						JSON.stringify(
