@@ -3,7 +3,7 @@
 	Author Tobias Koppers @sokra
 */
 module.exports = function(src) {
-	if (typeof execScript === "function")
+	if (typeof execScript !== "undefined")
 		execScript(src);
 	else
 		eval.call(null, src);
