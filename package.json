@@ -1,19 +1,19 @@
 {
-	"name": "script-loader",
-	"version": "0.6.1",
-	"author": "Tobias Koppers @sokra",
-	"description": "script loader module for webpack",
-	"dependencies": {
-		"raw-loader": "~0.5.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:webpack/script-loader.git"
-	},
-	"licenses": [
-		{
-			"type": "MIT",
-			"url": "http://www.opensource.org/licenses/mit-license.php"
-		}
-	]
+  "name": "script-loader",
+  "version": "0.7.0",
+  "author": "Tobias Koppers @sokra",
+  "description": "script loader module for webpack",
+  "dependencies": {
+    "raw-loader": "~0.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:webpack/script-loader.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
 }
