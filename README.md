@@ -3,7 +3,7 @@
 ## Usage
 
 ``` javascript
-require("script!./file.js");
+require("script-loader!./file.js");
 // => execute file.js once in global context
 ```
 
