@@ -1,8 +1,6 @@
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 [![deps][deps]][deps-url]
-[![tests][tests]][tests-url]
-[![coverage][cover]][cover-url]
 [![chat][chat]][chat-url]
 
 <div align="center">
@@ -93,12 +91,6 @@ import exec from 'script-loader!./script.js';
 
 [deps]: https://david-dm.org/webpack/script-loader.svg
 [deps-url]: https://david-dm.org/webpack/script-loader
-
-[tests]: http://img.shields.io/travis/webpack/script-loader.svg
-[tests-url]: https://travis-ci.org/webpack/script-loader
-
-[cover]: https://coveralls.io/repos/github/webpack/script-loader/badge.svg
-[cover-url]: https://coveralls.io/github/webpack/script-loader
 
 [chat]: https://badges.gitter.im/webpack/webpack.svg
 [chat-url]: https://gitter.im/webpack/webpack
