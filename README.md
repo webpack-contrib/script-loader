@@ -35,7 +35,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.exec.js$/,
+        test: /\.exec\.js$/,
         use: [ 'script-loader' ]
       }
     ]
