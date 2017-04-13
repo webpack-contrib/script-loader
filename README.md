@@ -23,6 +23,12 @@ Executes JS script once in global context.
 
 > :warning: Doesn't work in NodeJS
 
+<h2 align="center">Options</h2>
+
+|Name|Type|Default|Description|
+|:-----:|:----:|:------:|:-----------|
+|**`sourceMap`**|`{Boolean}`|`false`| Enable/Disable Sourcemaps|
+
 ### Config (recommended)
 
 ```js
