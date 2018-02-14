@@ -17,6 +17,7 @@ module.exports = function(src) {
 		if (typeof execScript !== "undefined" && isIE()) {
 			execScript(src);
 		} else if (typeof eval !== "undefined") {
+			src = src.replace(/('|")use strict('|");?/, '');
 			eval.call(null, src);
 		} else {
 			log("EvalError: No eval function available");
