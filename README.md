@@ -21,6 +21,9 @@ npm install --save-dev script-loader
 
 Executes JS script once in global context.
 
+It converts the script into a plain string, and upon runtime, the exported string is passed to `window.eval` or `window.executeScript` depending on the browser.
+Doing so, the code loaded with this loader is ran on the topmost scope.
+
 > :warning: Doesn't work in NodeJS
 
 ### Config (recommended)
@@ -48,6 +51,10 @@ module.exports = {
 ```js
 import exec from 'script-loader!./script.js';
 ```
+
+### Example
+
+Take a look at the example provided in the [./example](example) folder
 
 <h2 align="center">Maintainers</h2>
 
