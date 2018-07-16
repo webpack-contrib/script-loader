@@ -14,6 +14,8 @@ module.exports = function(src) {
 	}
 
 	try {
+		src = src.replace(/('|")use strict('|");?/, '');
+
 		if (typeof execScript !== "undefined" && isIE()) {
 			execScript(src);
 		} else if (typeof eval !== "undefined") {
