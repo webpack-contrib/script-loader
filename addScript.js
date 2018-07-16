@@ -2,10 +2,10 @@
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
 */
-module.exports = function (src) {
+module.exports = function(src) {
 	function log(error) {
 		(typeof console !== "undefined")
-			&& (console.error || console.log)("[Script Loader]", error);
+		&& (console.error || console.log)("[Script Loader]", error);
 	}
 
 	// Check for IE =< 8
