@@ -9,7 +9,7 @@ module.exports.pitch = function(remainingRequest) {
 	return "require(" + JSON.stringify("!!" + path.join(__dirname, "addScript.js")) + ")"+
 			"(require(" +
 			JSON.stringify("!!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
-				(this.debug ?
+				(this.debug || (this.query && this.query.sourceMap) ?
 					"+" +
 						JSON.stringify(
 							"\n\n// SCRIPT-LOADER FOOTER\n//# sourceURL=script:///" +
