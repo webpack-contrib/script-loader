@@ -8,7 +8,8 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "raw-loader": "~0.5.1"
+    "raw-loader": "~0.5.1",
+    "loader-utils": "~1.1.0"
   },
   "devDependencies": {
     "standard-version": "^4.2.0"
