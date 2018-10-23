@@ -7,7 +7,7 @@ var loaderUtils = require("loader-utils");
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
   this.cacheable && this.cacheable();
-  return "require(" + loaderUtils.stringifyRequest(this, "!!" + path.join(__dirname, "addScript.js")) + ")"+
+  return "require(" + loaderUtils.stringifyRequest(this, "!!" + path.join(__dirname, "addScript.js")) + ")" +
     "(require(" +
     loaderUtils.stringifyRequest(this, "!!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
     (this.debug ?
