@@ -26,7 +26,7 @@ Executes JS script once in global context.
 ### Config (recommended)
 
 ```js
-import exec from 'script.exec.js';
+import './script.exec.js';
 ```
 
 **webpack.config.js**
@@ -46,7 +46,7 @@ module.exports = {
 ### Inline
 
 ```js
-import exec from 'script-loader!./script.js';
+import 'script-loader!./script.js';
 ```
 
 <h2 align="center">Maintainers</h2>
