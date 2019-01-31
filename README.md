@@ -49,6 +49,19 @@ module.exports = {
 import exec from 'script-loader!./script.js';
 ```
 
+## Options
+
+|                    Name                     |         Type          |     Default     | Description                                 |
+| :-----------------------------------------: | :-------------------: | :-------------: | :------------------------------------------ |
+|        **[`sourceMap`](#sourcemap)**        |      `{Boolean}`      |     `false`     | Enable/Disable Sourcemaps
+
+### `sourceMap`
+
+Type: `Boolean`
+Default: `false`
+
+To include source maps set the `sourceMap` option.
+
 <h2 align="center">Maintainers</h2>
 
 <table>
