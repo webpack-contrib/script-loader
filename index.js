@@ -7,7 +7,7 @@ var loaderUtils = require("loader-utils");
 
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
-  var options = loaderUtils.getOptions(this) || {};
+  var options = Object.assign({}, loaderUtils.getOptions(this));
 
 	this.cacheable && this.cacheable();
 	return "require(" + JSON.stringify("!!" + path.join(__dirname, "addScript.js")) + ")"+
