@@ -62,6 +62,29 @@ Default: `false`
 
 To include source maps set the `sourceMap` option.
 
+**webpack.config.js**
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.script\.js$/,
+        use: [
+          {
+            loader: 'script-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ]
+      }
+    ]
+  }
+}
+```
+
+
+
 <h2 align="center">Maintainers</h2>
 
 <table>
