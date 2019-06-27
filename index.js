@@ -3,13 +3,17 @@
 	Author Tobias Koppers @sokra
 */
 var path = require("path");
+var loaderUtils = require("loader-utils");
+
 module.exports = function() {};
 module.exports.pitch = function(remainingRequest) {
+  var options = loaderUtils.getOptions(this) || {};
+
 	this.cacheable && this.cacheable();
 	return "require(" + JSON.stringify("!!" + path.join(__dirname, "addScript.js")) + ")"+
 			"(require(" +
 			JSON.stringify("!!" + require.resolve("raw-loader") + "!" + remainingRequest) + ")" +
-				(this.debug ?
+				(this.debug || options.sourceMap ?
 					"+" +
 						JSON.stringify(
 							"\n\n// SCRIPT-LOADER FOOTER\n//# sourceURL=script:///" +
