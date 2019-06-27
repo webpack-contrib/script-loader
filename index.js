@@ -20,5 +20,5 @@ module.exports.pitch = function(remainingRequest) {
 								encodeURI(remainingRequest.replace(/^!/, "")).replace(/%5C|%2F/g, "/").replace(/\?/, "%3F").replace(/^\//, "")
 						) :
 					"") +
-			")";
+			"," + JSON.stringify(options.useStrict) + ")";
 };
