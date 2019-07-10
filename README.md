@@ -54,6 +54,8 @@ import exec from 'script-loader!./script.js';
 |                    Name                     |         Type          |     Default     | Description                                 |
 | :-----------------------------------------: | :-------------------: | :-------------: | :------------------------------------------ |
 |        **[`sourceMap`](#sourcemap)**        |      `{Boolean}`      |     `false`     | Enable/Disable Sourcemaps
+|        **[`useStrict`](#useStrict)**        |      `{Boolean}`      |     `true`      | Enable/Disable useStrict
+
 
 ### `sourceMap`
 
@@ -83,6 +85,33 @@ module.exports = {
 }
 ```
 
+### `useStrict`
+
+Type: `Boolean`
+Default: `true`
+
+To disable use strict set the `useStrict` option to `false`.
+
+**webpack.config.js**
+```js
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.script\.js$/,
+        use: [
+          {
+            loader: 'script-loader',
+            options: {
+              useStrict: false,
+            },
+          },
+        ]
+      }
+    ]
+  }
+}
+```
 
 
 <h2 align="center">Maintainers</h2>
