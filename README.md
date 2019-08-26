@@ -54,7 +54,7 @@ import 'script-loader!./script.js';
 |                    Name                     |         Type          |     Default     | Description                                 |
 | :-----------------------------------------: | :-------------------: | :-------------: | :------------------------------------------ |
 |        **[`sourceMap`](#sourcemap)**        |      `{Boolean}`      |     `false`     | Enable/Disable Sourcemaps
-|        **[`useStrict`](#useStrict)**        |      `{Boolean}`      |     `true`      | Enable/Disable useStrict
+|        **[`useStrict`](#usestrict)**        |      `{Boolean}`      |     `true`      | Enable/Disable useStrict
 
 
 ### `sourceMap`
