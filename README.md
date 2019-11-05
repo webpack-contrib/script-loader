@@ -3,6 +3,28 @@
 [![deps][deps]][deps-url]
 [![chat][chat]][chat-url]
 
+# ! NO LONGER MAINTAINED !
+
+This module is deprecated and will no longer be maintained.
+
+It has a known issue of generating non-deterministic hashes (see #49, #56, #60). 
+*Do not use it.*
+
+In most cases, you can replace the functionality by using `raw-loader` instead:
+
+```diff
+- import('script-loader!someScript.js')
++ import('raw-loader!someScript.js').then(rawModule => eval.call(null, rawModule.default))
+```
+
+If you need some transformations to be applied to the script you want to load, you may need to find or write yourself a separate loader for that. Some documentation that might be helpful:
+
+- https://webpack.js.org/loaders/
+- https://webpack.js.org/concepts/loaders/
+- https://webpack.js.org/contribute/writing-a-loader/
+
+----------
+
 <div align="center">
   <a href="https://github.com/webpack/webpack">
     <img width="200" height="200"
